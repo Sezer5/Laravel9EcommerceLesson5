@@ -7,11 +7,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="assets/vendor/owl-slider.css"/>
     <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
-    <title>@yield("title")</title>
-    @yield("head")
+    <title>Home version 1</title>
 </head>
 <body>
-    @include("home.header")
 <div id="topbar">
     <div class="container">
         <div class="topbar-left">
@@ -269,16 +267,3 @@
         </div>
     </nav>
 </header><!-- /header -->
-<h1>Header</h1>
-@section('sidebar')
-    This is the master sidebar.
-@show
-
-<div class="container">
-    @yield('content')
-</div>
-<h1>Footer</h1>
-    @include("home.footer")
-@yield('foot')
-</body>
-</html>
